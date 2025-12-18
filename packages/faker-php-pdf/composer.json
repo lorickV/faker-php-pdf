@@ -1,0 +1,31 @@
+{
+    "name": "xefi/faker-php-pdf",
+    "type": "library",
+    "description": "Faker extension to generate pdf",
+    "keywords": [
+        "faker",
+        "file",
+        "pdf"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lorick VACHER-ALLOUCHE"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Xefi\\Faker\\Pdf\\": "src/"
+        }
+    },
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    },
+    "extra": {
+        "faker": {
+            "providers": [
+                "Xefi\\Faker\\Pdf\\FakerPdfServiceProvider"
+            ]
+        }
+    }
+}
